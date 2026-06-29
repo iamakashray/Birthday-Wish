@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Didi Bhai! 👑</title>
+    <!-- Premium Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="light-overlay" id="lightOverlay"></div>
+    <div class="balloon-container" id="balloonContainer"></div>
+
+    <div class="container">
+        <!-- Main Stage -->
+        <h1 class="main-title" id="mainTitle">Happy Birthday<br>Didi Bhai</h1>
+        <button class="btn" id="giftBtn" onclick="startSurprise()">Open Your Gift</button>
+
+        <!-- Glassmorphism Dialogue Stage -->
+        <div class="dialogue-box" id="dialogueBox">
+            <p class="dialogue-text" id="dialogueText">Preparing something special...</p>
+            <button class="btn" id="dialogueBtn" onclick="handleDialogue()">Next</button>
+        </div>
+
+        <!-- Long Emotional Message Card -->
+        <div class="curtain-section" id="curtainSection">
+            <div class="letter">
+                <h2>My Dearest Didi Bhai,</h2>
+                <p>On this incredibly special day, I want to take a moment to tell you how much you truly mean to me. You are not just my elder sister; you are my guide, my protector, my constant support system, and my absolute best friend. Thank you for always standing by my side, tolerating my mischief, and lighting up our family with your beautiful smile.</p>
+                <p>May this year bring endless happiness, success, and love into your life. You deserve the absolute best that the world has to offer. I promise to always be there for you, just as you have always been there for me. Have the most fantastic and magical birthday ever!</p>
+                <p style="text-align: right; font-weight: 700; margin-top: 25px; color: var(--accent-pink);">With love always, <br>Your Brother ❤️</p>
+            </div>
+            <button class="btn" onclick="showGallery()">Our Memories</button>
+        </div>
+
+        <!-- Photo Grid Stage -->
+        <div class="gallery-section" id="gallerySection">
+            <h2 style="font-family: 'Cinzel Decorative', serif; font-size: 2.3rem; color: var(--gold-glow); margin-bottom: 5px;">Moments in Time</h2>
+            <p style="font-size: 0.9rem; opacity: 0.7; font-weight: 600;">Tap on each memory to unfold a hidden reflection</p>
+            
+            <div class="grid">
+                <div class="photo-card" onclick="showPhotoMsg('Nostalgia! The golden days of our childhood.')">
+                    <img src="photo1.jpg" alt="Memory 1">
+                </div>
+                <div class="photo-card" onclick="showPhotoMsg('Pure happiness! Inside jokes only we understand.')">
+                    <img src="photo2.jpg" alt="Memory 2">
+                </div>
+                <div class="photo-card" onclick="showPhotoMsg('Partners in crime! Always and forever.')">
+                    <img src="photo3.jpg" alt="Memory 3">
+                </div>
+                <div class="photo-card" onclick="showPhotoMsg('Through thick and thin, you got my back!')">
+                    <img src="photo4.jpg" alt="Memory 4">
+                </div>
+                <div class="photo-card" onclick="showPhotoMsg('Silly fights, but endless love.')">
+                    <img src="photo5.jpg" alt="Memory 5">
+                </div>
+                <div class="photo-card" onclick="showPhotoMsg('The best sister anyone could ever ask for!')">
+                    <img src="photo6.jpg" alt="Memory 6">
+                </div>
+            </div>
+
+            <button class="btn" style="margin-top: 40px;" onclick="playMagic()">Play the Magic</button>
+        </div>
+    </div>
+
+    <!-- Micro-interactions Popup -->
+    <div class="popup-msg" id="popupMsg"></div>
+
+    <!-- Premium Background Audio Placeholder -->
+    <audio id="bgMusic" loop src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+
+    <!-- Linking External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
